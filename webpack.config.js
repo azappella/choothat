@@ -20,6 +20,7 @@ const config = {
     output: {
         path: PUBLIC,
         filename: 'js/[name].js',
+        publicPath: '/'
     },
     resolve: {
         modules: [
@@ -41,7 +42,14 @@ const config = {
             // }
         ]
     },
-    plugins: [new HtmlWebpackPlugin()]
+    plugins: [
+        new HtmlWebpackPlugin(),
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, 'public'),
+        historyApiFallback: true
+    },
+    devtool: 'source-map'
 }
 
 module.exports = config;
