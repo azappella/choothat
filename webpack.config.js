@@ -43,7 +43,10 @@ const config = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'choothat',
+            filename: 'index.html'
+        }),
     ],
     devServer: {
         contentBase: path.join(__dirname, 'public'),
