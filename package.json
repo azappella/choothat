@@ -1,0 +1,45 @@
+{
+  "name": "choothat",
+  "version": "0.1.0",
+  "description": "An example app that uses choo, a lightweight frontend framework",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --progress --colors --watch",
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/azappella/choothat.git"
+  },
+  "keywords": [
+    "choo",
+    "yo",
+    "yo-yo",
+    "choo",
+    "framework",
+    "example",
+    "app"
+  ],
+  "author": "Andrew Zappella <andrew.zappella@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azappella/choothat/issues"
+  },
+  "homepage": "https://github.com/azappella/choothat",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-yo-yoify": "^0.6.0",
+    "babel-preset-env": "^1.5.2",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "choo": "^5.6.2",
+    "on-load": "^3.2.0",
+    "yo-yoify": "^3.7.3"
+  }
+}
